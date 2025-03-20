@@ -1,0 +1,292 @@
+.hero-banner {
+  width: 100%;
+  min-height: 614px;
+  padding: 20px;
+  background: linear-gradient(162.77deg, #FFFFFF 55.44%, #4D95E1 71.32%, #8165E4 82.01%, #BD2CE8 94.69%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between; /* Change to flex-end */
+  /* align-items: flex-end; */
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 150px;
+}
+
+.left-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  color: #000000;
+  margin: 0;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4D95E1, #8165E4, #BD2CE8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.14px;
+  color: #000000;
+  margin: 0;
+}
+.gradient-subtitle{
+  width: 736px;
+height: 131px;
+
+  font-family: Poppins;
+font-weight: 500;
+font-size: 28px;
+line-height: 36px;
+letter-spacing: 0.5%;
+vertical-align: middle;
+
+}
+.appointment-btn {
+  width: 309px;
+  height: 69px;
+  background: #6c5fd4;
+  border-radius: 34.5px;
+  border: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+  background: #5a4dc0;
+}
+
+.right-section {
+  /* margin-left: auto; Removed this line */
+  width: 50%;
+  height: 438px;
+  
+}
+
+.hero-image {
+
+width: 629px;
+height: 438px;
+opacity: 1; /* Initial opacity */
+transition: opacity 1s ease-in-out;
+
+}
+
+.hero-image.fade-out {
+  opacity: 0; /* Fade out */
+}
+
+.hero-image.fade-in {
+  opacity: 1; /* Fade in */
+}
+
+
+.stats-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 32px;
+  margin-top: auto;
+  padding: 20px;
+  margin-right: 10%;
+}
+
+.stat-group {
+  text-align: center;
+  position: relative;
+}
+
+.stat-group h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 55.9px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.stat-group p {
+  font-family: 'Cambria', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.stat-group:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 80px;
+  background-color: white;
+}
+
+
+
+
+/* Mobile Responsive CSS */
+@media (max-width: 768px) {
+  body {
+      font-size: 16px; /* Adjust base font size for mobile */
+  }
+
+  /* Hero Banner Mobile Adjustments */
+  .hero-banner {
+      min-height: auto; /* Allow content to dictate height */
+      padding: 10px;
+  }
+
+  .content-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 10px;
+  }
+
+  .left-section,
+  .right-section {
+      width: 100%;
+      text-align: center;
+  }
+
+  h1 {
+      font-size: 32px;
+      line-height: 40px;
+  }
+
+  .gradient-subtitle {
+      font-size: 18px;
+      line-height: 26px;
+      width: auto;
+  }
+
+  .appointment-btn {
+      width: 200px;
+      height: 45px;
+      font-size: 16px;
+      align-items: center;
+  }
+  button.appointment-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .right-section {
+      height: auto;
+  }
+
+  .hero-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .stats-container {
+      flex-direction: row;
+      align-items: center;
+      margin-right: 0;
+      gap: 15px;
+      padding: 10px;
+      margin-bottom: 30px; /* Increase margin-bottom to create space */
+
+  }
+
+  .stat-group h2 {
+      font-size: 40px;
+  }
+
+  .stat-group p {
+      font-size: 16px;
+  }
+
+  .stat-group:not(:last-child)::after {
+      display: none;
+  }
+
+  /* Adjustments for "Explore our Service" section */
+  /* Assuming these are classes or IDs you're using */
+  .explore-service,
+  .digital-marketing {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .explore-service h2,
+  .digital-marketing h2 {
+      font-size: 24px;
+  }
+
+  .explore-service p,
+  .digital-marketing p {
+      font-size: 16px;
+  }
+
+  .service-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .service-buttons button {
+      width: 100%; /* Make buttons full width */
+  }
+
+  /* Logos (POWER XR2 MODULE, logoipsum) */
+  .logo-container { /* Assuming a container for these logos */
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px; /* Add margin-top to push logos down */
+
+  }
+
+  .logo-container img {
+      max-width: 80%; /* Adjust logo size */
+      height: auto;
+  }
+
+  /* Image Slider Mobile Adjustments */
+  .imageslider-container {
+      width: 100%; /* Take full width */
+      padding: 10px;
+      transform: translateY(-50px); /* Adjust as needed */
+  }
+
+  .imageslider img {
+      max-height: 150px; /* Adjust image size in slider */
+  }
+
+  /* Any other mobile specific styles */
+}

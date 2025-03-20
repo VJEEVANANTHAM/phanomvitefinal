@@ -1,0 +1,13 @@
+.logos {
+  animation: logo-slider 10s linear infinite;
+  
+}
+
+@keyframes logo-slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

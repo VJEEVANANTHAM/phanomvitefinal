@@ -1,0 +1,33 @@
+.imageslider-container {
+    width: fixed(1440px); /* Assuming fixed width */
+    height: 115px; /* Assuming fixed height */
+    padding-top: 100px;
+    padding-bottom: 60px;
+    margin-bottom: 5%;
+}
+
+.imageslider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .imageslider-container {
+        width: 100%;
+        padding: 10px;
+        margin-top: 80px; /* Increase margin-top */
+    }
+
+    .imageslider {
+        margin-left: 5px; /* Reduce left margin for mobile */
+    }
+
+    .imageslider img {
+        max-height: 150px; /* Adjust max height for mobile */
+        max-width: 90%; /* Ensure images don't overflow */
+    }
+}

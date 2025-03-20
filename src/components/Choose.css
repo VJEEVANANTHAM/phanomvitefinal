@@ -1,0 +1,58 @@
+.development-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Or specify a width */
+    height: 100vh; /* Or specify a height */
+    background: linear-gradient(to right, #9155E2, #CE1CE5); /* Example gradient background */
+  }
+  
+  .development-content {
+    background-color: white;
+    border-radius: 50%; /* Circular shape */
+    width: 400px; /* Adjust size as needed */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 3rem; /* Adjust icon size */
+    margin-bottom: 20px;
+  }
+  
+  .code-icon {
+    font-size: 3rem; /* Adjust icon size */
+    color: #8F58E4; /* Icon color */
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333; /* Title color */
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #666; /* Description color */
+    padding: 0 20px; /* Add padding for better readability */
+  }
+  
+  /* Optional: Add responsive styles using media queries */
+  @media (max-width: 600px) {
+    .development-content {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .icon, .code-icon {
+      font-size: 2rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  }
