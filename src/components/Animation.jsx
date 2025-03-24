@@ -1,4 +1,4 @@
-import "../animation.css";
+import "./animation.css";
 import { services } from "../assets/data/services";
 const Animation = () => {
   return (
