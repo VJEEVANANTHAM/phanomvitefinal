@@ -1,5 +1,5 @@
 import "../animation.css";
-import { services } from "../../assets/data/services";
+import { services } from "../assets/data/services";
 const Animation = () => {
   return (
     <div className="bg-[#bd2ce8] h-[40rem] flex justify-center items-center overflow-hidden " >

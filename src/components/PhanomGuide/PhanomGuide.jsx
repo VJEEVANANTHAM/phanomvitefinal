@@ -1,9 +1,9 @@
-import man from "../assets/images/man.png";
+import man from "../../assets/images/man.png";
 import { FaStar } from "react-icons/fa";
 import './PhanomGuide.css'
-import Expand from '../assets/expand.png'
-import OS from '../assets/os.png'
-import seo from '../assets/seo.png'
+import Expand from '../../assets/expand.png'
+import OS from '../../assets/os.png'
+import seo from '../../assets/seo.png'
 
 const PhanomGuide = () => {
   return (

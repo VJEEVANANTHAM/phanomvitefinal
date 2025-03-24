@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FaCaretRight } from "react-icons/fa";
 import { FaCaretLeft } from "react-icons/fa";
 import "swiper/swiper-bundle.css";
-import Card from "./Card/Card";
+import Card from "./Card";
 const SubSwiper = ({ cardsData, index }) => {
   return (
     <div className="relative">
